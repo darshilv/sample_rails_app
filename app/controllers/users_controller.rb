@@ -80,4 +80,12 @@ class UsersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def hello
+    @myString = "Hello Darshil"
+
+    respond_to do |format|
+      format.js
+    end
+  end
 end

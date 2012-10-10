@@ -1,6 +1,6 @@
 SampleRailsApp::Application.routes.draw do
   resources :users
-
+  match "/hello" => "users#hello"
   root :to => 'users#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
